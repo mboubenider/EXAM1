@@ -1,0 +1,32 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<HBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" prefHeight="10" prefWidth="10">
+    <VBox>
+        <Label fx:id="RandomNumberLabel">Random Number: </Label>
+        <Label>Database</Label>
+        <ListView fx:id ="NumberListView" prefHeight="150" prefWidth="200"></ListView>
+    </VBox>
+    <VBox spacing = "10">
+        <HBox spacing="5">
+            <Label prefWidth="50">Max</Label>
+            <TextField fx:id = "MaxTextField"></TextField>
+        </HBox>
+        <HBox>
+            <Label prefWidth="50">Min</Label>
+            <TextField fx:id = "MinTextField"></TextField>
+        </HBox>
+        <VBox>
+            <Button text="RUN" fx:id = "runbutton"></Button>
+            <Button text="LOAD NUMBERS" fx:id = "loadbutton"></Button>
+        </VBox>
+
+    </VBox>
+
+</HBox>
